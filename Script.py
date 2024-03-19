@@ -303,6 +303,58 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 ɴᴏᴛᴇ : ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
 [ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ]</b>"""
 
+    PREMIUM_TEXT = """<b>👋 ʜᴇʏ {},
+    
+🎖️ <u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</u>
+
+● ➛ <code> 1 𝖶𝖾𝖾𝗄 : ₹10 </code> 
+● ➛ <code> 1 𝖬𝗈𝗇𝗍𝗁 : ₹30 </code>
+● ➛ <code> 2 𝖬𝗈𝗇𝗍𝗁 : ₹60 </code>
+● ➛ <code> 3 𝖬𝗈𝗇𝗍𝗁 : ₹120 </code>
+● ➛ <code> 6 𝖬𝗈𝗇𝗍𝗁 : ₹199 </code>
+● ➛ <code> 1 𝖸𝖾𝖺𝗋 : ₹389 </code>
+
+💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
+📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
+
+⚜️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
+
+    CPREMIUM_TEXT = """<b>👋 ʜᴇʏ {},
+    
+🎖️ <u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</u> :
+
+● ➛ <code> 1 𝖶𝖾𝖾𝗄 : ₹10 </code> 
+● ➛ <code> 1 𝖬𝗈𝗇𝗍𝗁 : ₹30 </code>
+● ➛ <code> 2 𝖬𝗈𝗇𝗍𝗁 : ₹60 </code>
+● ➛ <code> 3 𝖬𝗈𝗇𝗍𝗁 : ₹120 </code>
+● ➛ <code> 6 𝖬𝗈𝗇𝗍𝗁 : ₹199 </code>
+● ➛ <code> 1 𝖸𝖾𝖺𝗋 : ₹389 </code>
+
+💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
+📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
+
+⚜️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
+    PREPLANS_TXT = """<b>👋 ʜᴇʏ {},
+    
+🎖️ <u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</u> :
+
+● ➛ <code> 1 𝖶𝖾𝖾𝗄 : ₹10 </code> 
+● ➛ <code> 1 𝖬𝗈𝗇𝗍𝗁 : ₹30 </code>
+● ➛ <code> 2 𝖬𝗈𝗇𝗍𝗁 : ₹60 </code>
+● ➛ <code> 3 𝖬𝗈𝗇𝗍𝗁 : ₹120 </code>
+● ➛ <code> 6 𝖬𝗈𝗇𝗍𝗁 : ₹199 </code>
+● ➛ <code> 1 𝖸𝖾𝖺𝗋 : ₹389 </code>
+
+💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
+📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
+
+⚜️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
     
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
