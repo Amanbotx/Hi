@@ -38,10 +38,53 @@ BUTTONS = {}
 SPELL_CHECK = {}
 CAP = {}
 
-
-        
 @Client.on_callback_query(filters.regex(r"^not_premium"))
 async def stream_download(bot, query):
+    if await db.has_premium_access(query.from_user.id):
+        file_id = query.data.split('#', 1)[1]
+        msg = await bot.send_cached_media(
+            chat_id=BIN_CHANNEL,
+            file_id=file_id)
+        user_id = query.from_user.id
+        username =  query.from_user.mention 
+        online = await import_site(f"{URL}watch/{msg.id}")
+        download = await import_site(f"{URL}download/{msg.id}")
+    
+        await msg.reply_text(
+            text=f"tg://openmessage?user_id={user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username}",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
+                                            InlineKeyboardButton('🖥️ ꜱᴛʀᴇᴇᴍ 🖥️', url=online)]])
+        )
+        await query.answer("अगर आपको सब तरह के AD दूर करने हे तो ᴘʀᴇᴍɪᴜᴍ ʙᴜʏ करना होगा...✅\n\nAD फ्री सर्विस सिर्फ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ हैं ।\n\nᴀᴅ-ꜰʀᴇᴇ ꜱᴇʀᴠɪᴄᴇ ᴏɴʟʏ ꜰᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ....😒", show_alert=True)
+        await query.message.reply_text(
+            text=f"सब तरह के AD दूर करने हे तो ᴘʀᴇᴍɪᴜᴍ ʙᴜʏ करना होगा...✅",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('💎 ᴘʀᴇᴍɪᴜᴍ 💎', url='https://t.me/TheHappyHourBot?start=TheHappyHour'),
+                                            InlineKeyboardButton('💥 ꜰᴜᴛᴜʀᴇꜱ 💥', url='https://graph.org/The-Happy-Hour-12-22-2')]])
+        )
+        await query.edit_message_reply_markup(
+            reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
+                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=online)
+                ],[
+                    InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
+                ]
+            ]
+        ))
+    else:
+        await query.answer("ये सिर्फ प्रिमियम User के लिए है...😒", show_alert=True)
+        await query.message.reply_text(
+            text=f"ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('💎 ᴘʀᴇᴍɪᴜᴍ 💎', url='https://t.me/TheHappyHourBot?start=TheHappyHour'),
+                                            InlineKeyboardButton('💥 ꜰᴜᴛᴜʀᴇꜱ 💥', url='https://graph.org/The-Happy-Hour-12-22-2')]])
+        )
+        
+@Client.on_callback_query(filters.regex(r"^stream"))
+async def stream_downloader(bot, query):
     file_id = query.data.split('#', 1)[1]
     msg = await bot.send_cached_media(
         chat_id=BIN_CHANNEL,
